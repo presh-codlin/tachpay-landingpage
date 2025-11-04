@@ -1,16 +1,36 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Baloo_Bhaina_2, Dongle, Inter, Nunito, Poppins, Quicksand, Sarabun } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const inter = Inter({
+  variable: "--font-inter",
   subsets: ["latin"],
-});
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+})
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const sarabun = Sarabun({
+  variable: "--font-sarabun",
   subsets: ["latin"],
-});
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800"],
+})
+
+const nunito = Nunito({
+  variable: "--font-nunito",
+  subsets: ["latin"],
+  weight: ["200", "300", "400", "500", "600", "700", "800", "900"],
+})
+
+const dongle = Dongle({
+  variable: "--font-dongle",
+  subsets: ["latin"],
+  weight: ["300", "400", "700"]
+})
+
+const baloo = Baloo_Bhaina_2({
+  variable: "--font-baloo",
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700", "800"],
+})
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -25,7 +45,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${sarabun.variable} ${inter.variable} ${nunito.variable} ${dongle.variable} ${baloo.variable}`}
       >
         {children}
       </body>
