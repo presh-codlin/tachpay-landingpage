@@ -37,3 +37,19 @@ export const FeatCard = ({classname, imgHeight, imgStyle, imgWidth, imgUrl, name
     </div>
   )
 }
+
+
+export const FaqCard = ({question, answer, index, onclick, activeFaq} : {question: string; answer: string; index: number; onclick:(state:number)=>void; activeFaq:number}) => {
+  return(
+    <div key={index} className="w-full flex flex-col gap-6">
+      <div className="w-full transition-all duration-700 flex flex-col gap-3">
+        <div onClick={onclick} className="w-full flex itmes-center justify-between">
+          <h3 className="text-[20px] text-[#000000] font-semibold font-sarabun">{question}</h3>
+          <Image src={`${activeFaq === index ? "/remove-circle.svg" : "add-circle.svg"}`} alt='icn' width={24} height={24}/>
+        </div>
+        <span className={`transition-all duration-700 text-[#00000080] font-sarabun font-normal text-base ${activeFaq != index && "hidden"}`}>{answer}</span>
+      </div>
+      <hr className="w-full h-0 boder-[1px] border-[#0000001A]"/>
+    </div>
+  )
+}
