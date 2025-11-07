@@ -89,6 +89,7 @@ const Faq = ({activeTab} : {activeTab:string}) => {
         {activeTab === "general" ? (
           faqsData.filter((faqdata) => faqdata.category.includes("general")).map((faqdata, index) => (
             <FaqCard
+              key={index}
               index={index}
               question={faqdata.question}
               answer={faqdata.answer}
@@ -99,6 +100,7 @@ const Faq = ({activeTab} : {activeTab:string}) => {
         ) : activeTab === "pricing" ? (
           faqsData.filter((faqdata) => faqdata.category.includes("pricing")).map((faqdata, index) => (
             <FaqCard
+              key={index}
               index={index}
               question={faqdata.question}
               answer={faqdata.answer}
@@ -109,6 +111,7 @@ const Faq = ({activeTab} : {activeTab:string}) => {
         ) : activeTab === "technical" ? (
           faqsData.filter((faqdata) => faqdata.category.includes("technical")).map((faqdata, index) => (
             <FaqCard
+              key={index}
               index={index}
               question={faqdata.question}
               answer={faqdata.answer}
@@ -119,6 +122,7 @@ const Faq = ({activeTab} : {activeTab:string}) => {
         ) : activeTab === "legal" && (
           faqsData.filter((faqdata) => faqdata.category.includes("legal")).map((faqdata, index) => (
             <FaqCard
+              key={index}
               index={index}
               question={faqdata.question}
               answer={faqdata.answer}

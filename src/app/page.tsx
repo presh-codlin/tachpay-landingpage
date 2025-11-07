@@ -4,6 +4,7 @@ import HowItWorks from "@/components/how-it-works";
 import Navbar from "@/components/navbar";
 import OurFeatures from "@/components/our-features";
 import WhatToDo from "@/components/what-to-do";
+import Footer from "@/components/footer";
 
 export default function Home() {
   return (
@@ -15,8 +16,8 @@ export default function Home() {
       <HowItWorks/>
       <OurFeatures/>
       <Faqs/>
-      <WhatToDo/>
-      
+      {/* <WhatToDo/> */}
+      <Footer/>
     </section>
   );
 }
