@@ -1,9 +1,9 @@
 import Image from "next/image"
 
-export const Logo = ({className}: {className: string}) => {
+export const Logo = ({className, src}: {className: string; src:string}) => {
   return (
     <div className={`relative ${className}`}>
-      <Image src="./Coloured.svg" fill alt="logo"/>
+      <Image src={src} fill alt="logo"/>
     </div>
   )
 }

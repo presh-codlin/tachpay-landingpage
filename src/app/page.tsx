@@ -16,7 +16,7 @@ export default function Home() {
       <HowItWorks/>
       <OurFeatures/>
       <Faqs/>
-      {/* <WhatToDo/> */}
+      <WhatToDo/>
       <Footer/>
     </section>
   );

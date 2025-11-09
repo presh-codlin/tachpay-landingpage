@@ -13,23 +13,24 @@ const quickLinks = [
 
 const socialGroups = [
   [
-    "/help-circle.svg",
-    "/help-circle.svg",
-    "/help-circle.svg",
+    {img: "/vector-1.svg", width: 11.25, height: 20},
+    {img: "/vector.svg", width: 20, height: 12},
+    {img: "/vector-2.svg", width: 11.25, height: 20},
   ],[
-    "/help-circle.svg",
-    "/help-circle.svg",
+    {img: "/vector-3.svg", width: 11.25, height: 20},
+    {img: "/vector-4.svg", width: 11.25, height: 20},
   ]
 ]
 
 const Footer = ()=>{
   const [currentLang, setCurrentLang] = useState(0);
   return (
-    <div className="w-full flex justify-center bg-[#0B2B26]">
-      <div className="max-w-[1440px] w-full h-fit min-[980px]:h-[596px] gap-[100px] min-[980px]:gap-8 flex py-[64px] px-4 min-[380px]:px-[35px] min-[678px]:px-[70px] min-[960px]:px-8 min-[1064px]:px-10 min-[1200px]:px-[80px] flex-col min-[960px]:flex-row min-[960px]:items-center justify-between">
+    <div className="w-full flex justify-center items-center bg-[#0B2B26]">
+      <h1 className="text-[310px] hidden font-sf bg-gradient-to-b from-white/100 to-white/0 via-40% via-white/10 to-70% text-transparent bg-clip-text">TachPay</h1>
+      <div className="max-w-[1440px] w-full z-50 h-fit min-[980px]:h-[596px] gap-[100px] min-[980px]:gap-8 flex py-[64px] px-4 min-[380px]:px-[35px] min-[678px]:px-[70px] min-[960px]:px-8 min-[1064px]:px-10 min-[1200px]:px-[80px] flex-col min-[960px]:flex-row min-[960px]:items-center justify-between">
         <div className="w-full min-[960px]:w-[560px] h-full flex flex-col gap-[60px] min-[960px]:justify-between items-start">
           <div className='w-full flex flex-col gap-8'>
-            <Logo className="w-[160px] min-[980px]:w-[140px] min-[1064px]:w-[160px] h-[32px]"/>
+            <Logo src="/logo-white.png" className="w-[160px] min-[980px]:w-[140px] min-[1064px]:w-[160px] h-[32px]"/>
             <div className='w-full max-w-[420px] flex flex-col gap-4'>
               <span className='font-inter text-base font-normal text-[#FFFFFF80]'>The first free end-to-end analytics service for the site, designed to work with enterprises of various levels and business segments.</span>
               <div className='flex gap-3 items-center'>
@@ -43,7 +44,9 @@ const Footer = ()=>{
               {socialGroups.map((socialGroup, index)=> (
                 <div key={index} className='flex flex-col gap-[10px]'>
                   {socialGroup.map((social, index) => (
-                    <Image key={index} src={social} alt='icn' width={40} height={40}/>
+                    <div key={index} className="w-10 h-10 rounded-[40px] flex items-center justify-center bg-white relative">
+                      <Image src={social.img} alt='icn' width={social.width} height={social.height}/>
+                    </div>
                   ))}
                 </div>
               ))}

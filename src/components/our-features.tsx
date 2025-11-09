@@ -28,51 +28,51 @@ export default OurFeatures;
 const Features = () =>{
   return(
     <div className='w-full flex flex-col items-center gap-4'>
-      <div className='w-full flex flex-wrap justify-between min-[1024px]:justify-center items-center gap-4'>
+      <div className='w-full flex flex-wrap justify-center min-[880px]:justify-between min-[980px]:justify-center items-center gap-4'>
         <FeatCard
-          classname='w-full min-[800px]:w-[48.5%] min-[980px]:w-[576px] overflow-hidden'
+          classname='w-full min-[880px]:w-[48.5%] max-w-[576px] min-[980px]:w-[55%] min-[980px]:max-w-[576px] overflow-hidden'
           name='Built-in Wallet'
           info='Store funds, top up, or withdraw to your bank or card anytime.'
           imgHeight="h-[196px]"
-          imgWidth="w-full min-[369px]:w-[280px] min-[500px]:w-[337px]"
+          imgWidth="w-full min-[369px]:w-[280px] min-[500px]:w-[337px] min-[880px]:w-full min-[980px]:w-[337px]"
           imgUrl="/feature-1.png"
-          imgStyle='min-[369px]:my-[35px] min-[800px]:my-[0px] min-[845px]:my-[35px]'
+          imgStyle='min-[369px]:my-[35px] min-[880px]:my-[0px] min-[845px]:my-[35px] min-[980px]:my-[35px]'
         />
         <FeatCard
-          classname='w-full min-[800px]:w-[48.5%] min-[980px]:w-[430px]'
+          classname='w-full min-[880px]:w-[48.5%] max-w-[576px] min-[980px]:w-[40%] min-[980px]:max-w-[430px]'
           name='Refunds and Disputes'
           info='Request refunds or dispute payments in a few taps.'
-          imgHeight="h-[156px]"
+          imgHeight="h-[156px] min-[880px]:h-[196px]"
           imgWidth="w-[150px] min-[500px]:w-[150px]"
           imgUrl="/feature-2.svg"
           imgStyle='mt-[11px] mb-[38px]'
         />
       </div>
 
-      <div className='w-full flex flex-wrap justify-between min-[1024px]:justify-center items-center gap-4'>
+      <div className='w-full flex flex-wrap justify-center min-[880px]:justify-between min-[980px]:justify-center items-center gap-4'>
         <FeatCard
-          classname='w-full min-[800px]:w-[48.5%] min-[980px]:w-[503px]'
+          classname='w-full min-[880px]:w-[48.5%] max-w-[576px] min-[980px]:max-w-[503px] min-[980px]:w-[47.5%]'
           name='NFC Payments'
           info='Send or receive money instantly by tapping phones — no hardware or QR codes.'
-          imgHeight="h-[100px] min-[369px]:h-[194px]"
-          imgWidth="w-[300px] min-[500px]:w-[400px]"
+          imgHeight="h-[100px] min-[369px]:h-[194px] min-[880px]:h-[160px]"
+          imgWidth="w-[300px] min-[500px]:w-[400px] min-[880px]:w-[90%] min-[880px]:max-w-[400px]"
           imgUrl="/feature-3.png"
           imgStyle='mt-[15px] mb-[35px]'
         />
         <FeatCard
-          classname='w-full min-[800px]:w-[48.5%] min-[980px]:w-[503px]'
+          classname='w-full min-[880px]:w-[48.5%] max-w-[576px] min-[980px]:max-w-[503px] min-[980px]:w-[47.3%]'
           name='Secure Login'
           info='Protect your account with biometrics, OTP, and two-factor authentication.'
-          imgHeight="h-[174px]"
+          imgHeight="h-[174px] min-[880px]:h-[160px]"
           imgWidth="w-[280px] min-[500px]:w-[337px]"
           imgUrl="/feature-4.png"
           imgStyle='mt-[19px] mb-[35px]'
         />
       </div>
 
-      <div className='w-full flex flex-wrap justify-between min-[1024px]:justify-center items-center gap-4'>
+      <div className='w-full flex flex-wrap justify-center min-[880px]:justify-between min-[980px]:justify-center items-center gap-4'>
         <FeatCard
-          classname='w-full min-[800px]:w-[48.5%] min-[980px]:max-w-[430px]'
+          classname='w-full min-[880px]:w-[48.5%] max-w-[576px] min-[980px]:w-[40%] min-[980px]:max-w-[430px]'
           name='Refunds and Disputes'
           info='Request refunds or dispute payments in a few taps.'
           imgHeight="h-[230px]"
@@ -81,13 +81,13 @@ const Features = () =>{
           imgStyle='mt-[-23px] mb-[35px]'
         />
         <FeatCard
-          classname='w-full min-[780px]:w-[48.5%] min-[800px]:w-[48.5%] max-w-[576px]'
+          classname='w-full min-[880px]:w-[48.5%] max-w-[576px] min-[980px]:w-[55%] min-[980px]:max-w-[576px]'
           name='Monthly Reports'
           info='Download summaries of your transactions anytime.'
           imgHeight="h-[236px]"
           imgWidth="w-[300px] min-[500px]:w-[400px]"
           imgUrl="/feature-6.png"
-          imgStyle='mt-[15px] mb-[35px]'
+          imgStyle='mt-[15px] min-[880px]:mt-[5px] mb-[35px]'
         />
       </div>
     </div>

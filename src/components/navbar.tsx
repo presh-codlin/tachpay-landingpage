@@ -16,7 +16,7 @@ export default function Navbar(){
     <nav className="w-full h-[100px] bg-gradient-to-r from-[#FFFFFF]/50 to-white/30 fixed top-0 z-50 left-0 p-[2px]">
         <div className="w-full h-full flex items-center justify-center bg-gradient-to-r backdrop-blur-[20px] from-white/60 to-white/30 ">
           <div className="max-w-[1440px] w-full px-4 min-[380px]:px-[35px] min-[678px]:px-[70px] min-[960px]:px-8 min-[1064px]:px-10 min-[1200px]:px-[80px] flex items-center justify-between">
-            <Logo className="w-[160px] min-[980px]:w-[140px] min-[1064px]:w-[160px] h-[32px]"/>
+            <Logo src="./Coloured.svg" className="w-[160px] min-[980px]:w-[140px] min-[1064px]:w-[160px] h-[32px]"/>
             <ul className="hidden min-[980px]:flex items-center gap-10">
               {links.map((link, index) => (
                 <Link key={index} href={link.url} className="text-black font-medium text-[15px] min-[980px]:text-[15.5px] min-[1200px]:text-[15px] capitalize font-sarabun">
