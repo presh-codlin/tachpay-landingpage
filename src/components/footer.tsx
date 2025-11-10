@@ -13,12 +13,12 @@ const quickLinks = [
 
 const socialGroups = [
   [
-    {img: "/vector-1.svg", width: 11.25, height: 20},
+    {img: "/vector-1.svg", width: 11.25, height: 18},
     {img: "/vector.svg", width: 20, height: 12},
-    {img: "/vector-2.svg", width: 11.25, height: 20},
+    {img: "/vector-2.svg", width: 18.46, height: 15},
   ],[
-    {img: "/vector-3.svg", width: 11.25, height: 20},
-    {img: "/vector-4.svg", width: 11.25, height: 20},
+    {img: "/vector-3.svg", width: 18, height: 18},
+    {img: "/vector-4.svg", width: 18, height: 18},
   ]
 ]
 
