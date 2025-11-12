@@ -54,8 +54,8 @@ const Features = () =>{
           classname='w-full min-[880px]:w-[48.5%] max-w-[576px] min-[980px]:max-w-[503px] min-[980px]:w-[47.5%]'
           name='NFC Payments'
           info='Send or receive money instantly by tapping phones — no hardware or QR codes.'
-          imgHeight="h-[100px] min-[369px]:h-[194px] min-[880px]:h-[160px]"
-          imgWidth="w-[300px] min-[500px]:w-[400px] min-[880px]:w-[90%] min-[880px]:max-w-[400px]"
+          imgHeight="h-[150px] min-[369px]:h-[194px] min-[880px]:h-[160px]"
+          imgWidth="w-[270px] min-[395px]:w-[300px] min-[500px]:w-[400px] min-[880px]:w-[90%] min-[880px]:max-w-[400px]"
           imgUrl="/feature-3.png"
           imgStyle='mt-[15px] mb-[35px]'
         />

@@ -29,7 +29,7 @@ export const FeatCard = ({classname, imgHeight, imgStyle, imgWidth, imgUrl, name
     <div className={`${classname} flex flex-col rounded-[20px] border-[1.5px] bg-[#F6F6F6] border-[#B3B3B326] items-center`}>
       <div className={`relative ${imgHeight} ${imgWidth}`}><Image src={imgUrl} alt='image' fill={true} className={imgStyle}/></div>
       <div className='bg-[#FFFFFF80] h-[124px] w-full overflow-hidden rounded-b-[20px] backdrop-blur-[20px]'>
-        <div className='w-full mt-5 px-5 flex flex-col gap-2 items-start'>
+        <div className='w-full mt-5 mb-3 min-[390px]:mb-0 px-5 flex flex-col gap-2 items-start'>
           <h4 className='text-xl text-black font-sf font-semibold'>{name}</h4>
           <p className='text-base text-wrap text-black/50 font-sarabun font-medium'>{info}</p>
         </div>
