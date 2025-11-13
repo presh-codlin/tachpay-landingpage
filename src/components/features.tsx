@@ -53,3 +53,83 @@ export const FaqCard = ({question, answer, index, onclick, activeFaq} : {questio
     </div>
   )
 }
+
+export const testimonialData = [
+  {
+    id: "253jjs",
+    details: "Figma ipsum component variant main layer. Polygon layout vertical editor strikethrough. Horizontal flatten undo flows auto create edit group main. Editor bullet variant effect list vertical edit image flows. Pixel rotate flatten main move.Editor bullet variant effect list vertical edit image flows. Pixel rotate flatten main move.",
+    image: "/img-4.png",
+    name: "Kezia Eleojo",
+    role: "user"
+  },
+  {
+    id: "237jdj",
+    details: "Figma ipsum component variant main layer. Polygon layout vertical editor strikethrough. Horizontal flatten undo flows auto create edit group main. Editor bullet variant effect list vertical edit image flows. Pixel rotate flatten main move.Editor bullet variant effect list vertical edit image flows. Pixel rotate flatten main move.",
+    image: "/img-4.png",
+    name: "Kezia Eleojo",
+    role: "user"
+  },
+  {
+    id: "256dfts",
+    details: "Figma ipsum component variant main layer. Polygon layout vertical editor strikethrough. Horizontal flatten undo flows auto create edit group main. Editor bullet variant effect list vertical edit image flows. Pixel rotate flatten main move.Editor bullet variant effect list vertical edit image flows. Pixel rotate flatten main move.",
+    image: "/img-4.png",
+    name: "Kezia Eleojo",
+    role: "user"
+  },
+  {
+    id: "255xkl",
+    details: "Figma ipsum component variant main layer. Polygon layout vertical editor strikethrough. Horizontal flatten undo flows auto create edit group main. Editor bullet variant effect list vertical edit image flows. Pixel rotate flatten main move.Editor bullet variant effect list vertical edit image flows. Pixel rotate flatten main move.",
+    image: "/img-4.png",
+    name: "Kezia Eleojo",
+    role: "user"
+  },
+  {
+    id: "576gss",
+    details: "Figma ipsum component variant main layer. Polygon layout vertical editor strikethrough. Horizontal flatten undo flows auto create edit group main. Editor bullet variant effect list vertical edit image flows. Pixel rotate flatten main move.Editor bullet variant effect list vertical edit image flows. Pixel rotate flatten main move.",
+    image: "/img-4.png",
+    name: "Kezia Eleojo",
+    role: "user"
+  },
+  {
+    id: "577ahjk",
+    details: "Figma ipsum component variant main layer. Polygon layout vertical editor strikethrough. Horizontal flatten undo flows auto create edit group main. Editor bullet variant effect list vertical edit image flows. Pixel rotate flatten main move.Editor bullet variant effect list vertical edit image flows. Pixel rotate flatten main move.",
+    image: "/img-4.png",
+    name: "Kezia Eleojo",
+    role: "user"
+  },
+  {
+    id: "434ghj",
+    details: "Figma ipsum component variant main layer. Polygon layout vertical editor strikethrough. Horizontal flatten undo flows auto create edit group main. Editor bullet variant effect list vertical edit image flows. Pixel rotate flatten main move.Editor bullet variant effect list vertical edit image flows. Pixel rotate flatten main move.",
+    image: "/img-4.png",
+    name: "Kezia Eleojo",
+    role: "user"
+  },
+  {
+    id: "213yyd",
+    details: "Figma ipsum component variant main layer. Polygon layout vertical editor strikethrough. Horizontal flatten undo flows auto create edit group main. Editor bullet variant effect list vertical edit image flows. Pixel rotate flatten main move.Editor bullet variant effect list vertical edit image flows. Pixel rotate flatten main move.",
+    image: "/img-4.png",
+    name: "Kezia Eleojo",
+    role: "user"
+  },
+  {
+    id: "226yw",
+    details: "Figma ipsum component variant main layer. Polygon layout vertical editor strikethrough. Horizontal flatten undo flows auto create edit group main. Editor bullet variant effect list vertical edit image flows. Pixel rotate flatten main move.Editor bullet variant effect list vertical edit image flows. Pixel rotate flatten main move.",
+    image: "/img-4.png",
+    name: "Kezia Eleojo",
+    role: "user"
+  },
+  {
+    id: "2452jxj",
+    details: "Figma ipsum component variant main layer. Polygon layout vertical editor strikethrough. Horizontal flatten undo flows auto create edit group main. Editor bullet variant effect list vertical edit image flows. Pixel rotate flatten main move.Editor bullet variant effect list vertical edit image flows. Pixel rotate flatten main move.",
+    image: "/img-4.png",
+    name: "Kezia Eleojo",
+    role: "user"
+  },
+  {
+    id: "685fgal",
+    details: "Figma ipsum component variant main layer. Polygon layout vertical editor strikethrough. Horizontal flatten undo flows auto create edit group main. Editor bullet variant effect list vertical edit image flows. Pixel rotate flatten main move.Editor bullet variant effect list vertical edit image flows. Pixel rotate flatten main move.",
+    image: "/img-4.png",
+    name: "Kezia Eleojo",
+    role: "user"
+  },
+]

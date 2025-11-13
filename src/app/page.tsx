@@ -5,6 +5,7 @@ import Navbar from "@/components/navbar";
 import OurFeatures from "@/components/our-features";
 import WhatToDo from "@/components/what-to-do";
 import Footer from "@/components/footer";
+import Testimonial from "@/components/testimonial";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       </section>
       <HowItWorks/>
       <OurFeatures/>
+      <Testimonial/>
       <Faqs/>
       <WhatToDo/>
       <Footer/>
