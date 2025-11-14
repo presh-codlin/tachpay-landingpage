@@ -4,7 +4,7 @@ import { WorkCard } from './features';
 
 const HowItWorks = ()=>{
   return(
-    <div className="max-w-[1440px] bg-white w-full py-[80px] flex gap-[30px] items-center justify-center">
+    <div id='steps' className="max-w-[1440px] bg-white w-full py-[80px] flex gap-[30px] items-center justify-center">
       <div className='max-w-[1165px] px-[35px] min-[678px]:px-[70px] min-[960px]:px-0 flex flex-col gap-[50px] min-[420px]:gap-[100px] items-center justify-center'>
         <div className='w-full max-w-[362px] flex flex-col items-center gap-5'>
           <div className='flex rounded-[20px] border-[1.5px] border-dashed items-center py-[9px] px-3 gap-[6px] bg-[#0B2B26]/60 border-[#FFFFFF]/80'>

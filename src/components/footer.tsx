@@ -26,7 +26,7 @@ const Footer = ()=>{
   const [currentLang, setCurrentLang] = useState(0);
   return (
     <div className="w-full flex justify-center items-center bg-[#0B2B26]">
-      <h1 className="text-[310px] hidden font-sf bg-gradient-to-b from-white/100 to-white/0 via-40% via-white/10 to-70% text-transparent bg-clip-text">TachPay</h1>
+      <h1 className="text-[120px] hidden min-[800px]:block text-[270px] absolute font-sarabun bg-gradient-to-b from-white/100 to-white/0 via-40% via-white/10 to-70% text-transparent bg-clip-text">TachPay</h1>
       <div className="max-w-[1440px] w-full z-50 h-fit min-[980px]:h-[596px] gap-[100px] min-[980px]:gap-8 flex py-[64px] px-4 min-[380px]:px-[35px] min-[678px]:px-[70px] min-[960px]:px-8 min-[1064px]:px-10 min-[1200px]:px-[80px] flex-col min-[960px]:flex-row min-[960px]:items-center justify-between">
         <div className="w-full min-[960px]:w-[560px] h-full flex flex-col gap-[60px] min-[960px]:justify-between items-start">
           <div className='w-full flex flex-col gap-8'>

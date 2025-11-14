@@ -4,7 +4,7 @@ import { FeatCard } from './features';
 
 const OurFeatures = () =>{
   return(
-    <div className="max-w-[1440px] bg-white w-full flex py-[80px] px-[25px] min-[400px]:px-[35px] min-[678px]:px-[70px] min-[980px]:px-8 min-[1064px]:px-10 min-[1200px]:px-[80px] items-center justify-center">
+    <div id="features" className="max-w-[1440px] bg-white w-full flex py-[80px] px-[25px] min-[400px]:px-[35px] min-[678px]:px-[70px] min-[980px]:px-8 min-[1064px]:px-10 min-[1200px]:px-[80px] items-center justify-center">
       <div className='w-full max-w-[1165px] flex flex-col gap-[100px] items-center justify-center'>
         <div className='w-[85%] sm:w-[362px] flex flex-col items-center gap-5'>
           <div className='flex rounded-[20px] border-[1.5px] border-dashed items-center py-[9px] px-3 gap-[6px] bg-[#0B2B26]/60 border-[#FFFFFF]/80'>
@@ -54,8 +54,8 @@ const Features = () =>{
           classname='w-full min-[880px]:w-[48.5%] max-w-[576px] min-[980px]:max-w-[503px] min-[980px]:w-[47.5%]'
           name='NFC Payments'
           info='Send or receive money instantly by tapping phones — no hardware or QR codes.'
-          imgHeight="h-[150px] min-[369px]:h-[194px] min-[880px]:h-[160px]"
-          imgWidth="w-[270px] min-[395px]:w-[300px] min-[500px]:w-[400px] min-[880px]:w-[90%] min-[880px]:max-w-[400px]"
+          imgHeight="h-[140px] min-[369px]:h-[194px] min-[880px]:h-[160px]"
+          imgWidth="w-[250px] min-[395px]:w-[300px] min-[500px]:w-[400px] min-[880px]:w-[90%] min-[880px]:max-w-[400px]"
           imgUrl="/feature-3.png"
           imgStyle='mt-[15px] mb-[35px]'
         />

@@ -6,7 +6,7 @@ import { FaqCard } from './features';
 const Faqs = () => {
   const [activeTab, setActiveTab] = useState("general")
   return(
-    <div className="max-w-[1440px] bg-white w-full flex py-[80px] px-[25px] min-[400px]:px-[35px] min-[678px]:px-[70px] min-[980px]:px-8 min-[1064px]:px-10 min-[1200px]:px-[80px] items-center justify-center">
+    <div id="faqs" className="max-w-[1440px] bg-white w-full flex py-[80px] px-[25px] min-[400px]:px-[35px] min-[678px]:px-[70px] min-[980px]:px-8 min-[1064px]:px-10 min-[1200px]:px-[80px] items-center justify-center">
       <div className='w-full max-w-[816px] flex flex-col gap-[100px] items-center justify-center'>
         <div className='w-[85%] sm:w-[362px] md:w-auto flex flex-col items-center gap-5'>
           <div className='flex rounded-[20px] border-[1.5px] border-dashed items-center py-[9px] px-3 gap-[6px] bg-[#0B2B26]/60 border-[#FFFFFF]/80'>
@@ -24,7 +24,7 @@ const Faqs = () => {
               {["general","pricing","technical", "legal"].map((faqbtn, index)=>(
                 <button 
                   key={index} 
-                  className={`rounded-[30px] px-[25px] min-[470px]:px-[38px] py-[14px] gap-[10px] font-sf capitalize font-medium text-sm 
+                  className={`rounded-[30px] px-[25px] min-[470px]:px-[38px] py-[14px] cursor-pointer gap-[10px] font-sf capitalize font-medium text-sm 
                     ${activeTab === faqbtn ? "bg-[#FFFFFF] shadow-[0px_4px_20px_0px_#0000000D] text-[#000000]" : "text-[#00000080]"}
                   `} 
                   onClick={()=>setActiveTab(faqbtn)}

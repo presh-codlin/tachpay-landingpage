@@ -1,13 +1,13 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import { Logo } from "../../public/assets";
 
 const links = [
-  {name: "How it works", url: "/"},
-  {name: "our features", url: "/"},
-  {name: "FAQs", url: "/"},
-  {name: "testimonials", url: "/"},
+  {name: "How it works", url: "#steps"},
+  {name: "our features", url: "#features"},
+  {name: "FAQs", url: "#faqs"},
+  {name: "testimonials", url: "#testimonial"},
 ]
 
 export default function Navbar(){
@@ -38,10 +38,11 @@ export default function Navbar(){
 
 const MobileNav = ({menuOpened, setMenuOpened} : {setMenuOpened:(state:boolean)=>void; menuOpened:boolean})=> {
   const handleNavLinks = () => {
-    setMenuOpened(false)
+    setMenuOpened(false);
   }
+
   return(
-    <aside className={`w-full h-[100vh] ${menuOpened? "left-0" : "-left-[100%]"} transition-all duratuion-700 bg-gradient-to-r from-[#FFFFFF]/50 to-white/30 fixed top-[94px] z-50 p-[2px] min-[980px]:hidden`}>
+    <aside className={`w-full h-[100vh] ${menuOpened? "left-0" : "-left-[100%]"} transition-all duratuion-500 bg-gradient-to-r from-[#FFFFFF]/70 to-white/60 fixed top-[94px] z-50 p-[2px] min-[980px]:hidden`}>
       <div className="w-full h-full flex flex-col items-center bg-gradient-to-r backdrop-blur-[20px] from-white/60 to-white/30 ">
         <div className="w-full flex flex-col items-center justify-between gap-10">
           {/* <Logo className="w-[160px] min-[980px]:w-[140px] min-[1064px]:w-[160px] h-[32px]"/> */}
@@ -63,12 +64,15 @@ const MobileNav = ({menuOpened, setMenuOpened} : {setMenuOpened:(state:boolean)=
 }
 
 const Hamburger = ({menuOpened, setMenuOpened} : {setMenuOpened:(state:boolean)=>void; menuOpened:boolean}) => {
+  const handleMenu = ()=>{
+    setMenuOpened(!menuOpened);
+  }
   return(
-    <div className="w-[36px] h-[27px] flex flex-col items-end relative justify-center gap-[6px] min-[980px]:hidden" onClick={()=>setMenuOpened(!menuOpened)}>
+    <div className="w-[36px] h-[27px] flex flex-col items-end relative justify-center gap-[6px] min-[980px]:hidden" onClick={()=>handleMenu()}>
       {/* <span className="w-full h-[5px] absolute bg-black"/><span className="w-[5px] absolute h-full bg-black"/> */}
-      <span className={`h-[5px] bg-black rounded-[3px] ${menuOpened? "w-[34px] rotate45" : "w-[36px]"}`}/>
-      <span className={`${menuOpened? "hidden" : "w-[34px] h-[5px] bg-black rounded-[3px]"}`}/>
-      <span className={` h-[5px] bg-black rounded-[3px] ${menuOpened? "w-[34px] rotate225" : "w-8"}`}/>
+      <span className={`h-[5px] bg-black rounded-[3px] transition-all duration-500 ${menuOpened? "w-[34px] mr-[1px] mt-[2px] rotate45" : "w-[36px]"}`}/>
+      <span className={`transition-all duration-500 ${menuOpened? "hidden" : "w-[34px] h-[5px] bg-black rounded-[3px]"}`}/>
+      <span className={` h-[5px] bg-black rounded-[3px] transition-all duration-500 ${menuOpened? "w-[34px] mt-[-10px] rotate225" : "w-8"}`}/>
     </div>
   )
 }
