@@ -40,12 +40,12 @@ const Testimonial = () => {
               <p className='w-[80%] max-w-[300px] min-[380px]:w-auto text-center text-black/50 font-sarabun font-medium text-base'>Real stories from people who tapped, paid, and smiled.</p>
             </div>
           </div>
-          <div className="w-[2207px] h-fit flex flex-col gap-5">
+          <div className="w-[2207px] h-fit flex flex-col gap-14 min-[436px]:gap-5">
             {result.map((data, index)=>(
               <Marquee pauseOnHover={true} direction={`${index === 0 ? "left" : "right"}`} autoFill={true} speed={70} key={index} style={{height: "286px", overflow: "visible"}}>
-                <div className="flex gap-5 w-fit h-[286px] pr-5">
+                <div className="flex gap-5 w-fit h-[320px] min-[436px]:h-[286px] pr-5">
                   {data.map((testimony, indx)=>(
-                    <div key={testimony.id} className="w-[336px] h-[286px] bg-[#0B2B2680] rounded-[15px] pt-[18px] px-6">
+                    <div key={testimony.id} className="w-[280px] min-[436px]:w-[336px] h-[320px] min-[436px]:h-[286px] bg-[#0B2B2680] rounded-[15px] pt-[18px] px-6">
                       <div className="w-full flex flex-col gap-5">
                         <p className="font-sarabun font-medium text-[15px] text-[#FFFFFFCC]">{testimony.details}</p>
                         <div className="w-full flex gap-[17px] my-auto">
