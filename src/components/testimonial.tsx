@@ -26,8 +26,6 @@ const Testimonial = () => {
     }
   }
 
-  console.log(result)
-
   return(
     <div id="testimonial" className="w-full max-w-[1440px] py-[80px] bg-[#F6F6F6] flex flex-col items-center overflow-x-hidden">
       <div className="w-[2207px] flex flex-col items-center gap-[52px]">
